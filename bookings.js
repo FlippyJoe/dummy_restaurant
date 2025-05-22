@@ -39,6 +39,7 @@ nameInput.addEventListener(`input`, () => {
 document
   .getElementById("time-of-booking")
   .addEventListener("input", function () {
+    let bookingDate = document.getElementById(`date-of-booking`).value;
     let bookingTime = document.getElementById("time-of-booking").value;
     let message = document.getElementById("time-confirm");
 
@@ -56,6 +57,8 @@ document
     if (bookingTime >= openingHour && bookingTime <= closingHour) {
       message.textContent =
         "Your reservation is set for " +
+        bookingDate +
+        ", " +
         bookingTime +
         ". After submitting the form, we will get back to you with the confirmation. Thank you!";
       message.style.color = "white";
