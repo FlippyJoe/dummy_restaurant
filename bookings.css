@@ -1,0 +1,428 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.home-page-header {
+  width: 100vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-address-bar {
+  background-color: rgba(15, 41, 46, 0.654);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.header-address {
+  color: wheat;
+  font-size: clamp(0.7rem, 1.4vw, 1.6rem);
+}
+
+.fa-brands {
+  color: wheat;
+  z-index: 1000;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 2rem;
+  gap: clamp(1rem, 1vw, 2.5rem);
+
+  font-size: clamp(0.7rem, 1.5vw, 1.6rem);
+}
+
+.social-media > * {
+  transition: 0.4s ease both;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+  opacity: 0.8;
+  transform: translateY(3px);
+  color: lightcyan;
+}
+
+.menu-btn {
+  width: max-content;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.75s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: lightblue;
+
+  z-index: 1000;
+}
+
+.menu-btn:hover {
+  transform: rotate(360deg);
+  color: gold;
+}
+
+.openMenuBtn {
+  margin-right: 2rem;
+}
+
+.closeMenuBtn {
+  display: none;
+  margin-right: 2rem;
+}
+
+nav {
+  margin-top: -100%;
+  transition: 1s;
+  position: fixed;
+
+  z-index: 999;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+  padding: 4rem 0 2rem 0;
+
+  width: 100vw;
+
+  background-color: rgba(128, 128, 128, 0.9);
+
+  gap: 15px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  z-index: 999;
+}
+
+.linksContainer a {
+  text-decoration: none;
+  color: black;
+  transition: 0.75s;
+}
+
+.linksContainer a:hover {
+  color: orange;
+  transform: rotate(20deg);
+}
+
+.linksContainer .active-page {
+  text-decoration: underline;
+  color: lightcyan;
+}
+
+.linksContainer .active-page:hover {
+  text-decoration: underline;
+  color: lightcyan;
+  transform: rotate(0deg);
+}
+
+/* Main section -----------------------------------------------------------------------------*/
+
+.greeting {
+  margin-top: 4rem;
+  position: absolute;
+
+  text-align: center;
+
+  width: 100vw;
+
+  font-family: tangerine, sans-serif;
+  font-size: clamp(3rem, 6vw, 8rem);
+  font-weight: 900;
+
+  text-shadow: -2px 2px 2px blue;
+  color: rgb(232, 238, 239);
+
+  transition: 0.7s;
+
+  z-index: 1;
+}
+
+.contact-form {
+  position: relative;
+
+  padding-top: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: hard-light;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+
+  border-radius: 15px;
+
+  width: 80%;
+
+  padding: 1rem 0 1rem 0;
+
+  font-size: clamp(1rem, 1.5vw, 1.7rem);
+  text-shadow: -2px 2px 2px rgb(24, 9, 237);
+  color: rgb(247, 248, 249);
+
+  position: relative;
+  z-index: 1;
+}
+
+/* For better readability */
+.contact-form::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(116, 114, 114, 0.439);
+  backdrop-filter: blur(1px) brightness(0.8) contrast(120%) sepia(60%);
+
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.form-article-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input-field {
+  width: 15rem;
+  height: 1.5rem;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+
+  transition: all 0.45s;
+}
+#message {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.input-field {
+  background-color: rgb(0, 5, 65);
+  color: white;
+  border: 1px solid wheat;
+
+  letter-spacing: 2px;
+}
+
+.input-field:focus {
+  background-color: #e6f19f;
+  color: black;
+}
+
+/* Preferred seating */
+
+.preferred-seat-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.seatingArea {
+  display: flex;
+}
+
+.inside,
+.outside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-btn {
+  margin-left: auto;
+}
+
+/* Date- and time of booking */
+
+.date-of-booking-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+
+  text-align: center;
+  max-width: 90%;
+}
+
+#date-of-booking,
+#time-of-booking {
+  border-radius: 5px;
+  background-color: darkblue;
+  color: wheat;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+
+  border: none;
+}
+
+#time-of-booking {
+  width: 10rem;
+  text-align: center;
+}
+
+#time-confirm {
+  width: fit-content;
+}
+
+/* Special requirements */
+.special-requirements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  width: 100%;
+  border-radius: 15px;
+
+  padding: 1rem 0 1rem 0;
+
+  box-shadow: 2px 2px 10px;
+}
+
+.dietary-container label,
+.celebration-container label {
+  width: 15rem;
+  text-align: center;
+}
+
+.special-requirements {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.45s;
+}
+
+#message {
+  height: 10rem;
+  max-width: 70%;
+  margin-top: 0.2rem;
+}
+
+#diet-text:focus,
+#celebration-text:focus {
+  background-color: wheat;
+  color: black;
+
+  height: 15rem;
+  width: 20rem;
+
+  letter-spacing: 2px;
+}
+
+#diet-text,
+#celebration-text {
+  background-color: rgb(0, 5, 65);
+  color: white;
+
+  height: 15rem;
+  width: 20rem;
+  border-radius: 8px;
+
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+
+  letter-spacing: 1.5px;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+
+  transition: background-color 0.4s ease-in-out, transform 1s ease-in,
+    opacity 1s linear;
+}
+
+.special-req-checkbox {
+  background: linear-gradient(to right, blue, rgb(34, 34, 68));
+  color: white;
+
+  width: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  padding: 5px;
+
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  letter-spacing: 2px;
+
+  gap: 3rem;
+}
+
+/* Submit button */
+.submit-btn {
+  margin-bottom: 10px;
+  width: 10rem;
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  background-color: wheat;
+  border: none;
+  border-radius: 8px;
+
+  box-shadow: 2px 2px 10px grey;
+
+  padding: 5px;
+  transition: 0.4s;
+}
+
+.submit-btn:hover {
+  background-color: rgba(0, 0, 230);
+  color: white;
+}
+
+/* For intersection observer */
+
+input,
+label,
+.spec-request-text,
+.date-of-booking-section {
+  opacity: 0;
+  transform: translateX(-150px);
+  transition: background-color 0.4s ease-in-out, transform 1s ease-in,
+    opacity 1s linear;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}

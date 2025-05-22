@@ -1,0 +1,214 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.home-page-header {
+  width: 100vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-address-bar {
+  background-color: rgba(15, 41, 46, 0.654);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.header-address {
+  color: wheat;
+  font-size: clamp(0.7rem, 1.4vw, 1.6rem);
+}
+
+.fa-brands {
+  color: wheat;
+  z-index: 1000;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 2rem;
+  gap: clamp(1rem, 1vw, 2.5rem);
+
+  font-size: clamp(0.7rem, 1.5vw, 1.6rem);
+}
+
+.social-media > * {
+  transition: 0.4s ease both;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+  opacity: 0.8;
+  transform: translateY(3px);
+  color: lightcyan;
+}
+
+.menu-btn {
+  width: max-content;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.75s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: lightblue;
+
+  z-index: 1000;
+}
+
+.menu-btn:hover {
+  transform: rotate(360deg);
+  color: gold;
+}
+
+.openMenuBtn {
+  margin-right: 2rem;
+}
+
+.closeMenuBtn {
+  display: none;
+  margin-right: 2rem;
+}
+
+nav {
+  margin-top: -100%;
+  transition: 1s;
+  position: fixed;
+
+  z-index: 999;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+  padding: 4rem 0 2rem 0;
+
+  width: 100vw;
+
+  background-color: rgba(128, 128, 128, 0.906);
+
+  gap: 15px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  z-index: 999;
+}
+
+.linksContainer a {
+  text-decoration: none;
+  color: black;
+  transition: 0.75s;
+}
+
+.linksContainer a:hover {
+  color: orange;
+  transform: rotate(20deg);
+}
+
+.linksContainer .active-page {
+  text-decoration: underline;
+  color: lightcyan;
+}
+
+.linksContainer .active-page:hover {
+  text-decoration: underline;
+  color: lightcyan;
+  transform: rotate(0deg);
+}
+
+/* Menu body background */
+
+.menu-body {
+  background-image: url(mainBckgi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Main */
+
+.menu {
+  margin: 20px auto;
+  padding-bottom: 50px;
+  max-width: 600px;
+  background-color: rgba(37, 102, 116, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.menu h1 {
+  margin-top: 1.8rem;
+}
+
+.menu-header {
+  text-align: center;
+
+  font-family: tangerine, sans-serif;
+  font-size: clamp(4.5rem, 9vw, 10rem);
+  text-shadow: -3px 3px 3px orange;
+  color: blue;
+}
+
+.menu-subheading {
+  text-align: center;
+
+  font-family: tangerine, sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-shadow: -3px 3px 3px blue;
+  color: wheat;
+  text-decoration: underline;
+}
+
+.menu-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-shadow: -3px 3px 3px blue;
+  color: wheat;
+}
+
+.menu h2 {
+  color: wheat;
+  text-align: center;
+}
+
+.menu-item h3 {
+  font-weight: 800;
+  text-shadow: -3px 3px 3px blue;
+  color: lightcyan;
+}
+
+.menu-item span {
+  color: white;
+  text-shadow: none;
+}
+
+/* For intersection observer */
+.menu-item {
+  opacity: 0;
+  position: relative;
+  bottom: -60px;
+  transition: all 0.8s ease-in-out;
+}
+.show-menu-item {
+  opacity: 1;
+  bottom: 0;
+}

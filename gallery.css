@@ -1,0 +1,252 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.home-page-header {
+  width: 100vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-address-bar {
+  background-color: rgba(15, 41, 46, 0.654);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.header-address {
+  color: wheat;
+  font-size: clamp(0.7rem, 1.4vw, 1.6rem);
+}
+
+.fa-brands {
+  color: wheat;
+  z-index: 1000;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 2rem;
+  gap: clamp(1rem, 1vw, 2.5rem);
+
+  font-size: clamp(0.7rem, 1.5vw, 1.6rem);
+}
+
+.social-media > * {
+  transition: 0.4s ease both;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+  opacity: 0.8;
+  transform: translateY(3px);
+  color: lightcyan;
+}
+
+.menu-btn {
+  width: max-content;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.75s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: lightblue;
+
+  z-index: 1000;
+}
+
+.menu-btn:hover {
+  transform: rotate(360deg);
+  color: gold;
+}
+
+.openMenuBtn {
+  margin-right: 2rem;
+}
+
+.closeMenuBtn {
+  display: none;
+  margin-right: 2rem;
+}
+
+nav {
+  margin-top: -100%;
+  transition: 1s;
+  position: fixed;
+
+  z-index: 999;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+  padding: 4rem 0 2rem 0;
+
+  width: 100vw;
+
+  background-color: rgba(128, 128, 128, 0.906);
+
+  gap: 15px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  z-index: 999;
+}
+
+.linksContainer a {
+  text-decoration: none;
+  color: black;
+  transition: 0.75s;
+}
+
+.linksContainer a:hover {
+  color: orange;
+  transform: rotate(20deg);
+}
+
+.linksContainer .active-page {
+  text-decoration: underline;
+  color: lightcyan;
+}
+
+.linksContainer .active-page:hover {
+  text-decoration: underline;
+  color: lightcyan;
+  transform: rotate(0deg);
+}
+
+/* Main section -----------------------------------------------------------------------------*/
+
+.gallery-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+  margin-top: 30px;
+  padding: 5rem 0;
+
+  position: absolute;
+
+  background-color: wheat;
+}
+
+/* Gallery header line */
+.restaurant-name {
+  justify-content: center;
+  align-items: center;
+
+  width: max-content;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+
+  font-family: tangerine, sans-serif;
+  font-size: clamp(4.5rem, 9vw, 10rem);
+  text-shadow: -3px 3px 3px blue;
+  color: lightcyan;
+
+  position: relative;
+  animation: gallery-header-appear 2s both 200ms;
+
+  max-width: 90%;
+}
+
+.restaurant-name::after {
+  content: "";
+  background: linear-gradient(45deg, blue, white);
+
+  bottom: 0;
+  left: 0;
+
+  position: absolute;
+
+  height: 1.8px;
+  width: 100%;
+
+  border-radius: 50%;
+
+  animation: about-header-appear 2s both 800ms;
+}
+
+@keyframes gallery-header-appear {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+/*  */
+
+.gallery-card {
+  width: 35%;
+  min-width: 250px;
+  animation: gallery-card-appear 2s both;
+  border-radius: 15px;
+  box-shadow: 5px 10px 15px;
+
+  opacity: 0;
+  position: relative;
+  bottom: -100px;
+  transition: all 1s ease-in-out;
+
+  animation: gallery-card-appear 2s both;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gallery-card-appear {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+/* For intersection observer */
+.gallery-card-show {
+  opacity: 1;
+  bottom: 0;
+}
+
+.gallery-card-header {
+  color: white;
+
+  text-shadow: 2px -1px 2px black;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+
+.gallery-card-img {
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+}

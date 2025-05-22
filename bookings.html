@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookings</title>
+    <link rel="stylesheet" href="bookings.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Borel&family=League+Script&family=Send+Flowers&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="menu-body">
+    <header class="home-page-header">
+      <article class="header-address-bar">
+        <p class="header-address">Triq Emanuele Pinto, St. Paul`s Bay</p>
+        <div class="social-media">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+        <p class="openMenuBtn"><i class="fa fa-bars menu-btn"></i></p>
+        <p class="closeMenuBtn"><i class="fa fa-x menu-btn"></i></p>
+      </article>
+      <nav>
+        <section class="linksContainer">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Our Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="events.html">Private Hire</a>
+          <a href="bookings.html" class="active-page">Book Your Table</a>
+        </section>
+      </nav>
+    </header>
+    <main class="contact-main">
+      <div class="greeting">Please fill in the form below</div>
+      <form action="#" class="contact-form">
+        <section class="contact-form-container">
+          <article class="customer-first-name-container form-article-container">
+            <label for="customer-first-name">First Name: </label>
+            <input
+              type="text"
+              name="customer-first-name"
+              id="customer-first-name"
+              class="input-field"
+              required
+            />
+          </article>
+          <article class="customer-last-name-container form-article-container">
+            <label for="customer-last-name">Last Name: </label>
+            <input
+              type="text"
+              name="customer-last-name"
+              id="customer-last-name"
+              class="input-field"
+              required
+            />
+          </article>
+          <article class="customer-email-container form-article-container">
+            <label for="customer-email">Your Email: </label>
+            <input
+              type="email"
+              name="customer-email"
+              id="customer-email"
+              class="input-field"
+              required
+            />
+          </article>
+          <article class="customer-phone-container form-article-container">
+            <label for="customer-phone">Your Phone number: </label>
+            <input
+              type="text"
+              name="customer-phone"
+              id="customer-phone"
+              class="input-field"
+              required
+            />
+          </article>
+
+          <article class="number-of-adults form-article-container">
+            <label for="adult">Number of guests over age of 18:</label>
+            <input
+              type="number"
+              name="adults"
+              id="adults"
+              class="input-field"
+            />
+          </article>
+          <article class="number-of-minors form-article-container">
+            <label for="minor">Number of guests under age of 18:</label>
+            <input type="number" name="minor" id="minor" class="input-field" />
+          </article>
+          <article class="preferred-seat-article">
+            <div>Choose your preferred seating area:</div>
+            <div class="seatingArea indoor-seat">
+              <label for="seatin">Indoor</label>
+              <input
+                type="radio"
+                name="seat"
+                id="seatin"
+                class="radio-btn"
+                value="indoor"
+                checked
+              />
+            </div>
+            <div class="seatingArea outdoor-seat">
+              <label for="seatout">Outdoor</label>
+              <input
+                type="radio"
+                name="seat"
+                id="seatout"
+                class="radio-btn"
+                value="outdoor"
+              />
+            </div>
+          </article>
+
+          <article class="date-of-booking-section">
+            <label for="date-of-booking"
+              >Choose the date and time of your reservation</label
+            >
+            <input type="date" name="date-of-booking" id="date-of-booking" />
+
+            <select id="time-of-booking">
+              <option value="" disabled selected>Select a time</option>
+              <option value="10:00">10:00 AM</option>
+              <option value="10:30">10:30 AM</option>
+              <option value="11:00">11:00 AM</option>
+              <option value="11:30">11:30 AM</option>
+              <option value="12:00">12:00 PM</option>
+              <option value="12:30">12:30 PM</option>
+              <option value="13:00">1:00 PM</option>
+              <option value="13:30">1:30 PM</option>
+              <option value="14:00">2:00 PM</option>
+              <option value="14:30">2:30 PM</option>
+              <option value="15:00">3:00 PM</option>
+              <option value="15:30">3:30 PM</option>
+              <option value="16:00">4:00 PM</option>
+              <option value="16:30">4:30 PM</option>
+              <option value="17:00">5:00 PM</option>
+              <option value="17:30">5:30 PM</option>
+              <option value="18:00">6:00 PM</option>
+              <option value="18:30">6:30 PM</option>
+              <option value="19:00">7:00 PM</option>
+              <option value="19:30">7:30 PM</option>
+              <option value="20:00">8:00 PM</option>
+              <option value="20:30">8:30 PM</option>
+              <option value="21:00">9:00 PM</option>
+              <option value="21:30">9:30 PM</option>
+            </select>
+            <p id="time-confirm"></p>
+          </article>
+          <h3 class="specific-requirements-headline">Special Requirements</h3>
+          <article class="special-req-checkbox">
+            <label for="special-requirements-area"
+              >Shall you have any special requirement, please tick this box:
+            </label>
+
+            <input
+              type="checkbox"
+              name="special-requirements-area"
+              id="special-requirements-area"
+              class="special-requirements-box"
+            />
+          </article>
+          <button type="submit" class="submit-btn">Confirm Booking</button>
+          <section class="special-requirements">
+            <article class="dietary-container form-article-container">
+              <label for="diet-text"
+                >Do you have any special requierement? Specify please:</label
+              >
+              <textarea
+                name="diet"
+                id="diet-text"
+                class="spec-request-text"
+                maxlength="400"
+              ></textarea>
+            </article>
+            <article class="celebration-container form-article-container">
+              <label for="celebration-text"
+                >Are you celebrating a special occasion? Let us know how could
+                we make your event even brighter:</label
+              >
+              <textarea
+                name="celebration-checkbox"
+                id="celebration-text"
+                class="spec-request-text"
+                maxlength="400"
+              ></textarea>
+            </article>
+          </section>
+        </section>
+      </form>
+    </main>
+    <script src="bookings.js"></script>
+  </body>
+</html>
