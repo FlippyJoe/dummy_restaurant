@@ -56,7 +56,7 @@ closeMenuBtn.addEventListener(`click`, () => {
 window.addEventListener("scroll", function () {
   let offset = window.pageYOffset;
   document.querySelectorAll(".parallax1").forEach((item) => {
-    item.style.transform = `translateY(${offset * 0.3}px)`;
+    item.style.transform = `translateY(${offset * 0.01}px)`;
   });
   document.querySelectorAll(".parallax2").forEach((item) => {
     item.style.transform = `translateY(${offset * 0.01}px)`;
