@@ -15,7 +15,7 @@ img {
 }
 
 .header-address-bar {
-  background-color: rgba(15, 41, 46, 0.654);
+  background-color: rgba(0, 0, 0);
   height: 30px;
   display: flex;
   align-items: center;
@@ -150,11 +150,13 @@ nav {
 }
 
 .name-of-restaurant {
-  background-image: url(mainBckgi.jpg);
+  /* background-image: url(mainBckgi.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+
+  background-color: white;
 
   height: 100vh;
   width: 100%;
@@ -184,8 +186,8 @@ nav {
 .name-of-restaurant p {
   font-family: Borel, sans-serif;
   font-size: clamp(1rem, 2vw, 2.5rem);
-  text-shadow: -3px 3px 3px blue;
-  color: lightcyan;
+  /* text-shadow: -3px 3px 3px blue; */
+  color: rgb(16, 16, 16);
   width: 80%;
   text-align: center;
 }
@@ -195,16 +197,18 @@ nav {
 
   font-family: tangerine, sans-serif;
   font-size: clamp(4.5rem, 9vw, 10rem);
-  text-shadow: -3px 3px 3px blue;
-  color: lightcyan;
+  /* text-shadow: -3px 3px 3px blue; */
+  color: blue;
 }
 
 .steak-desc {
-  background-image: url(steak.jpeg);
+  /* background-image: url(steak.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+
+  background-color: darkgreen;
 
   display: flex;
   justify-content: center;
@@ -250,11 +254,13 @@ nav {
 }
 
 .fish-desc {
-  background-image: url(fishLikeThingy.jpg);
+  /* background-image: url(fishLikeThingy.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+
+  background-color: darkblue;
 
   display: flex;
   justify-content: center;
@@ -322,10 +328,12 @@ nav {
   width: 100%;
   height: 150vh;
 
-  background-image: url(garden.jpeg);
+  /* background-image: url(garden.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+
+  background-color: black;
 }
 
 .testimonials h1 {
