@@ -27,7 +27,7 @@ nameInput.addEventListener(`input`, () => {
   if (name.length > 0) {
     name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
     greeting.textContent = `Hello ${name}, thank you for your reservation with us!`;
-    greeting.style.backgroundColor = `rgba(236, 134, 17, 0.754)`;
+    // greeting.style.backgroundColor = `rgba(236, 134, 17, 0.754)`;
   } else {
     greeting.textContent = `Please fill in the form below`;
     greeting.style.backgroundColor = `transparent`;
@@ -74,7 +74,7 @@ document
         ", " +
         bookingTime +
         ". After submitting the form, we will get back to you with the confirmation. Thank you!";
-      message.style.color = "blue";
+      message.style.color = "white";
       message.style.textShadow = "-1px 1px 1px green";
     } else {
       message.textContent = "Please choose a time between 10:00 AM - 09:30 PM.";

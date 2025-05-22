@@ -73,6 +73,11 @@ img {
   z-index: 1000;
 }
 
+.menu-btn:hover {
+  transform: rotate(360deg);
+  color: gold;
+}
+
 .openMenuBtn {
   margin-right: 2rem;
   background-color: transparent;
@@ -142,12 +147,14 @@ nav {
 /* Main section -----------------------------------------------------------------------------*/
 
 .events-main {
-  height: fit-content;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
+
+  background: linear-gradient(90deg, rgb(0, 0, 100), rgb(100, 100, 100));
 }
 
 .restaurant-name {
@@ -162,7 +169,7 @@ nav {
   font-family: tangerine, sans-serif;
   font-size: clamp(4.5rem, 9vw, 10rem);
   /* text-shadow: -3px 3px 3px blue; */
-  color: blue;
+  color: white;
 
   position: relative;
   animation: gallery-header-appear 2s both 200ms;
@@ -172,7 +179,7 @@ nav {
 
 .restaurant-name::after {
   content: "";
-  background: linear-gradient(45deg, blue, white);
+  background: linear-gradient(45deg, white, blue);
 
   bottom: 0;
   left: 0;

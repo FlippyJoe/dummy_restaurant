@@ -151,7 +151,7 @@ nav {
   margin: 20px auto;
   padding-bottom: 50px;
   max-width: 600px;
-  background-color: rgba(0, 0, 100, 0.4);
+  background: linear-gradient(90deg, rgb(0, 0, 100), rgb(100, 100, 100));
   backdrop-filter: blur(8px);
 
   box-shadow: 2px 2px 20px blue;
@@ -159,6 +159,22 @@ nav {
 
 .menu h1 {
   margin-top: 1.8rem;
+  position: relative;
+}
+
+.menu h1::after {
+  content: "";
+  background: linear-gradient(45deg, white, blue);
+
+  bottom: 0;
+  left: 0;
+
+  position: absolute;
+
+  height: 1.8px;
+  width: 90%;
+
+  border-radius: 50%;
 }
 
 .menu-header {
@@ -175,7 +191,7 @@ nav {
 
   font-family: tangerine, sans-serif;
   font-size: clamp(2rem, 5vw, 3rem);
-  text-shadow: -3px 3px 3px blue;
+  /* text-shadow: -3px 3px 3px blue; */
   color: wheat;
   text-decoration: underline;
 }
@@ -183,7 +199,7 @@ nav {
 .menu-item {
   border-bottom: 1px solid #ccc;
   padding: 10px;
-  text-shadow: -3px 3px 3px blue;
+  /* text-shadow: -3px 3px 3px blue; */
   color: wheat;
 }
 
@@ -194,7 +210,7 @@ nav {
 
 .menu-item h3 {
   font-weight: 800;
-  text-shadow: -3px 3px 3px blue;
+  /* text-shadow: -3px 3px 3px blue; */
   color: lightcyan;
 }
 

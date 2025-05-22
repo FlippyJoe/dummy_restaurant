@@ -23,9 +23,7 @@ img {
   top: 0;
   left: 0;
   width: 100vw;
-
   z-index: 1000;
-  backdrop-filter: blur(8px);
 }
 
 .header-address {
@@ -153,7 +151,7 @@ nav {
 
   position: absolute;
 
-  background-color: wheat;
+  background: linear-gradient(90deg, rgb(0, 0, 100), rgb(100, 100, 100));
 }
 
 /* Gallery header line */
@@ -169,8 +167,7 @@ nav {
 
   font-family: tangerine, sans-serif;
   font-size: clamp(4.5rem, 9vw, 10rem);
-  /* text-shadow: -3px 3px 3px blue; */
-  color: blue;
+  color: white;
 
   position: relative;
   animation: gallery-header-appear 2s both 200ms;
@@ -180,7 +177,7 @@ nav {
 
 .restaurant-name::after {
   content: "";
-  background: linear-gradient(45deg, blue, white);
+  background: linear-gradient(45deg, white, blue);
 
   bottom: 0;
   left: 0;
