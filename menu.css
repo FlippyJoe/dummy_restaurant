@@ -15,7 +15,7 @@ img {
 }
 
 .header-address-bar {
-  background-color: rgba(15, 41, 46, 0.654);
+  background-color: black;
   height: 30px;
   display: flex;
   align-items: center;
@@ -138,11 +138,13 @@ nav {
 /* Menu body background */
 
 .menu-body {
-  background-image: url(mainBckgi.jpg);
+  /* background-image: url(mainBckgi.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+
+  background-color: black;
 }
 
 /* Main */
@@ -164,8 +166,8 @@ nav {
 
   font-family: tangerine, sans-serif;
   font-size: clamp(4.5rem, 9vw, 10rem);
-  text-shadow: -3px 3px 3px orange;
-  color: blue;
+  /* text-shadow: -3px 3px 3px orange; */
+  color: wheat;
 }
 
 .menu-subheading {
