@@ -30,7 +30,7 @@ nameInput.addEventListener(`input`, () => {
     greeting.style.backgroundColor = `rgba(236, 134, 17, 0.754)`;
   } else {
     greeting.textContent = `Please fill in the form below`;
-    greeting.style.backgroundColor = `white`;
+    greeting.style.backgroundColor = `transparent`;
   }
 });
 
