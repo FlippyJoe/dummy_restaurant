@@ -142,7 +142,6 @@ nav {
 /* Main section -----------------------------------------------------------------------------*/
 
 .home-page-main {
-  /* min-height: 300vh; */
   width: 100vw;
 
   background-color: lightcyan;
@@ -165,14 +164,12 @@ nav {
   align-items: center;
 
   position: relative;
-}
 
-.name-of-restaurant p {
-  font-family: Borel, sans-serif;
-  font-size: clamp(1rem, 2vw, 2.5rem);
-  color: rgb(16, 16, 16);
-  width: 80%;
-  text-align: center;
+  background-image: url(dessertBckgi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .busy-cook {
@@ -181,11 +178,10 @@ nav {
   font-family: tangerine, sans-serif;
   font-size: clamp(4.5rem, 9vw, 10rem);
   color: blue;
+  margin-top: -410px;
 }
 
 .steak-desc {
-  background-color: darkgreen;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,6 +192,12 @@ nav {
   text-align: center;
 
   position: relative;
+
+  background-image: url(steakBckgi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .steak-desc-p {
@@ -214,8 +216,6 @@ nav {
 }
 
 .fish-desc {
-  background-color: darkblue;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,6 +226,12 @@ nav {
   text-align: center;
 
   position: relative;
+
+  background-image: url(salmon.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .fish-desc-p {
@@ -241,21 +247,6 @@ nav {
 
   text-shadow: -3px 3px 3px blue;
   color: lightcyan;
-}
-
-/* Segments of main area */
-.main-segment {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.main-segment-pic {
-  width: 50%;
-  border-radius: 15px;
-  margin: 0 1rem 0 1rem;
 }
 
 /* Text appear scroll animation */
@@ -359,5 +350,9 @@ nav {
   }
   .main-segment-pic {
     width: 100%;
+  }
+
+  .busy-cook {
+    margin-top: -450px;
   }
 }

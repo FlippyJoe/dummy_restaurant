@@ -48,7 +48,7 @@ const parallax3 = document.querySelectorAll(`.parallax3`);
 window.addEventListener(`scroll`, function () {
   let offset = this.window.pageYOffset;
   parallax3.forEach((item) => {
-    item.style.backgroundPositionY = offset * -0.01 + `px`;
+    item.style.backgroundPositionY = offset * -0.09 + `px`;
   });
 });
 
