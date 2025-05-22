@@ -142,12 +142,6 @@ nav {
 /* Menu body background */
 
 .menu-body {
-  /* background-image: url(mainBckgi.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
-
   background-color: black;
 }
 
@@ -157,8 +151,10 @@ nav {
   margin: 20px auto;
   padding-bottom: 50px;
   max-width: 600px;
-  background-color: rgba(37, 102, 116, 0.4);
+  background-color: rgba(0, 0, 100, 0.4);
   backdrop-filter: blur(8px);
+
+  box-shadow: 2px 2px 20px blue;
 }
 
 .menu h1 {
