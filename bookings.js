@@ -142,4 +142,11 @@ function setup() {
   const messages = document.querySelectorAll(`.spec-request-text`);
   messages.forEach((message) => observer.observe(message));
   console.log(messages);
+
+  // ---- Indoor- and outdoor- seat
+  const indoorSeat = document.querySelector(`.indoor-seat`);
+  observer.observe(indoorSeat);
+
+  const outdoorSeat = document.querySelector(`.outdoor-seat`);
+  observer.observe(outdoorSeat);
 }

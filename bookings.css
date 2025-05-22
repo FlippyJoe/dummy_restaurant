@@ -261,8 +261,8 @@ nav {
   display: flex;
 }
 
-.inside,
-.outside {
+.outdoor-seat,
+.indoor-seat {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -415,9 +415,11 @@ nav {
 input,
 label,
 .spec-request-text,
-.date-of-booking-section {
+.date-of-booking-section,
+.indoor-seat,
+.outdoor-seat {
   opacity: 0;
-  transform: translateX(-150px);
+  transform: translateX(-100px);
   transition: background-color 0.4s ease-in-out, transform 1s ease-in,
     opacity 1s linear;
 }
