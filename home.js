@@ -18,37 +18,51 @@ closeMenuBtn.addEventListener(`click`, () => {
 // Main section
 // Parallax scroll
 // 1st element
+// ------------------------------ Below -----------------------------
+// const parallax1 = document.querySelectorAll(`.parallax1`);
 
-const parallax1 = document.querySelectorAll(`.parallax1`);
+// window.addEventListener(`scroll`, function () {
+//   let offset = this.window.pageYOffset;
+//   parallax1.forEach((item) => {
+//     item.style.backgroundPositionY = offset * -0.01 + `px`;
+//   });
+//   // console.log(`offset: ` + offset);
+//   // console.log(`offset modified: ` + offset * -0.2 + `px`);
+// });
 
-window.addEventListener(`scroll`, function () {
-  let offset = this.window.pageYOffset;
-  parallax1.forEach((item) => {
-    item.style.backgroundPositionY = offset * -0.7 + `px`;
+// //2nd element
+// const parallax2 = document.querySelectorAll(`.parallax2`);
+
+// window.addEventListener(`scroll`, function () {
+//   let offset = this.window.pageYOffset;
+//   parallax2.forEach((item) => {
+//     item.style.backgroundPositionY = offset * -0.01 + `px`;
+//   });
+// });
+// // console.log(`offset: ` + offset);
+// // console.log(`offset modified: ` + offset * -0.2 + `px`);
+
+// //3rd element
+// const parallax3 = document.querySelectorAll(`.parallax3`);
+
+// window.addEventListener(`scroll`, function () {
+//   let offset = this.window.pageYOffset;
+//   parallax3.forEach((item) => {
+//     item.style.backgroundPositionY = offset * -0.01 + `px`;
+//   });
+// });
+// ------------------------------------------ Above --------------------
+
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  document.querySelectorAll(".parallax1").forEach((item) => {
+    item.style.transform = `translateY(${offset * 0.3}px)`;
   });
-  // console.log(`offset: ` + offset);
-  // console.log(`offset modified: ` + offset * -0.2 + `px`);
-});
-
-//2nd element
-const parallax2 = document.querySelectorAll(`.parallax2`);
-
-window.addEventListener(`scroll`, function () {
-  let offset = this.window.pageYOffset;
-  parallax2.forEach((item) => {
-    item.style.backgroundPositionY = offset * -0.1 + `px`;
+  document.querySelectorAll(".parallax2").forEach((item) => {
+    item.style.transform = `translateY(${offset * 0.01}px)`;
   });
-});
-// console.log(`offset: ` + offset);
-// console.log(`offset modified: ` + offset * -0.2 + `px`);
-
-//3rd element
-const parallax3 = document.querySelectorAll(`.parallax3`);
-
-window.addEventListener(`scroll`, function () {
-  let offset = this.window.pageYOffset;
-  parallax3.forEach((item) => {
-    item.style.backgroundPositionY = offset * -0.1 + `px`;
+  document.querySelectorAll(".parallax3").forEach((item) => {
+    item.style.transform = `translateY(${offset * 0.01}px)`;
   });
 });
 
