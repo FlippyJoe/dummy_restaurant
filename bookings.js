@@ -35,7 +35,20 @@ nameInput.addEventListener(`input`, () => {
 });
 
 // Time of booking
-// const dateOfBooking = document.getElementById(`date-of-booking`)
+document.addEventListener("DOMContentLoaded", function () {
+  const dateInput = document.getElementById("date-of-booking");
+  dateInput.addEventListener("focus", function () {
+    this.type = "date";
+  });
+  dateInput.addEventListener("blur", function () {
+    if (!this.value) {
+      this.type = "text";
+      this.placeholder = "dd/mm/yyyy";
+    }
+  });
+});
+
+const dateOfBooking = document.getElementById(`date-of-booking`);
 document
   .getElementById("time-of-booking")
   .addEventListener("input", function () {
@@ -48,7 +61,7 @@ document
 
     if (!bookingTime) {
       message.textContent = "Please select a time.";
-      message.style.color = "white";
+      message.style.color = "blue";
       message.style.textShadow = "-1px 1px 1px red";
 
       return;
@@ -61,7 +74,7 @@ document
         ", " +
         bookingTime +
         ". After submitting the form, we will get back to you with the confirmation. Thank you!";
-      message.style.color = "white";
+      message.style.color = "blue";
       message.style.textShadow = "-1px 1px 1px green";
     } else {
       message.textContent = "Please choose a time between 10:00 AM - 09:30 PM.";

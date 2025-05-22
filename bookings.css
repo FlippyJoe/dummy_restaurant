@@ -80,11 +80,15 @@ img {
 
 .openMenuBtn {
   margin-right: 2rem;
+  background-color: transparent;
+  border: none;
 }
 
 .closeMenuBtn {
   display: none;
   margin-right: 2rem;
+  background-color: transparent;
+  border: none;
 }
 
 nav {
