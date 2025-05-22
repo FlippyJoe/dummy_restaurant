@@ -96,24 +96,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Preferred seat
 
-document.addEventListener("DOMContentLoaded", function () {
-  const contactForm = document.querySelector(".contact-form");
-  const radioButtons = document.querySelectorAll('input[name="seat"]'); // Selects radio buttons by name attribute
+// document.addEventListener("DOMContentLoaded", function () {
+//   const contactForm = document.querySelector(".contact-form");
+//   const radioButtons = document.querySelectorAll('input[name="seat"]'); // Selects radio buttons by name attribute
 
-  // Set default background image when the page loads
-  contactForm.style.backgroundImage = "url('mainBckgi.jpg')";
+//   // Set default background image when the page loads
+//   contactForm.style.backgroundImage = "url('mainBckgi.jpg')";
 
-  // Add event listeners for real-time background change
-  radioButtons.forEach((radio) => {
-    radio.addEventListener("change", function () {
-      if (this.value === "indoor") {
-        contactForm.style.backgroundImage = "url('mainBckgi.jpg')";
-      } else if (this.value === "outdoor") {
-        contactForm.style.backgroundImage = "url('garden.jpeg')";
-      }
-    });
-  });
-});
+//   // Add event listeners for real-time background change
+//   radioButtons.forEach((radio) => {
+//     radio.addEventListener("change", function () {
+//       if (this.value === "indoor") {
+//         contactForm.style.backgroundImage = "url('mainBckgi.jpg')";
+//       } else if (this.value === "outdoor") {
+//         contactForm.style.backgroundImage = "url('garden.jpeg')";
+//       }
+//     });
+//   });
+// });
 
 // Intersection observer
 

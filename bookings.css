@@ -15,7 +15,7 @@ img {
 }
 
 .header-address-bar {
-  background-color: rgba(15, 41, 46, 0.654);
+  background-color: black;
   height: 30px;
   display: flex;
   align-items: center;
@@ -149,8 +149,8 @@ nav {
   font-size: clamp(3rem, 6vw, 8rem);
   font-weight: 900;
 
-  text-shadow: -2px 2px 2px blue;
-  color: rgb(232, 238, 239);
+  /* text-shadow: -2px 2px 2px blue; */
+  color: blue;
 
   transition: 0.7s;
 
@@ -169,11 +169,11 @@ nav {
   gap: 3rem;
 
   width: 100vw;
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-blend-mode: hard-light;
+  background-blend-mode: hard-light; */
 }
 
 .contact-form-container {
@@ -191,8 +191,8 @@ nav {
   padding: 1rem 0 1rem 0;
 
   font-size: clamp(1rem, 1.5vw, 1.7rem);
-  text-shadow: -2px 2px 2px rgb(24, 9, 237);
-  color: rgb(247, 248, 249);
+  /* text-shadow: -2px 2px 2px rgb(24, 9, 237); */
+  color: blue;
 
   position: relative;
   z-index: 1;
