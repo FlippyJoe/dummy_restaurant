@@ -151,7 +151,7 @@ nav {
   .name-of-restaurant,
   .steak-desc,
   .fish-desc {
-    background-size: cover;
+    background-size: contain;
     background-attachment: scroll;
   }
 }
