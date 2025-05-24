@@ -147,7 +147,7 @@ nav {
 /* Main section -----------------------------------------------------------------------------*/
 
 .events-main {
-  height: fit-content;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,6 +243,7 @@ nav {
   box-shadow: 2px 2px 20px;
   transition: all 1s;
 }
+/* Break points */
 
 @media (max-width: 750px) {
   .main-card {
@@ -261,5 +262,11 @@ nav {
     width: 95%;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .events-main {
+    height: 150vh;
   }
 }
