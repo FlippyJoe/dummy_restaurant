@@ -367,19 +367,18 @@ nav {
 
 /* Override for iPhones */
 @media screen and (max-width: 1125px) {
-    .name-of-restaurant,
-    .steak-desc,
-    .fish-desc {
-        background-attachment: scroll;
-    }
+  .name-of-restaurant,
+  .steak-desc,
+  .fish-desc {
+    background-attachment: scroll;
+  }
 }
 
 /* **iOS-Specific Fix** using WebKit detection */
 @supports (-webkit-touch-callout: none) {
-    .name-of-restaurant,
-    .steak-desc,
-    .fish-desc {
-        background-attachment: scroll;
-    }
-}
+  .name-of-restaurant,
+  .steak-desc,
+  .fish-desc {
+    background-attachment: scroll;
+  }
 }
