@@ -214,7 +214,7 @@ nav {
   border: 1px solid brown;
   padding-bottom: 15px;
   width: 80%;
-  height: 70%;
+  height: fit-content;
   border-radius: 15px;
   background-color: wheat;
 
@@ -223,7 +223,6 @@ nav {
 
 .catering-card {
   width: 50%;
-  height: fit-content;
 
   padding: 20px 15px 0 15px;
   margin-left: 3rem;
