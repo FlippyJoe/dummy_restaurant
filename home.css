@@ -147,19 +147,11 @@ nav {
 
 /* Header break points --------------------------- */
 
-@media screen and (max-width: 1125px) {
-  .name-of-restaurant,
-  .steak-desc,
-  .fish-desc {
-    background-size: contain;
-    background-attachment: scroll;
-  }
-}
-
 /* Main section -----------------------------------------------------------------------------*/
 
 .home-page-main {
   width: 100vw;
+  overflow-x: hidden;
 
   background-color: lightcyan;
 }
@@ -362,4 +354,32 @@ nav {
     justify-content: center;
     align-items: center;
   }
+}
+
+/* @media screen and (max-width: 1125px) {
+  .name-of-restaurant,
+  .steak-desc,
+  .fish-desc {
+    background-size: contain;
+    background-attachment: scroll;
+  }
+} */
+
+/* Override for iPhones */
+@media screen and (max-width: 1125px) {
+    .name-of-restaurant,
+    .steak-desc,
+    .fish-desc {
+        background-attachment: scroll;
+    }
+}
+
+/* **iOS-Specific Fix** using WebKit detection */
+@supports (-webkit-touch-callout: none) {
+    .name-of-restaurant,
+    .steak-desc,
+    .fish-desc {
+        background-attachment: scroll;
+    }
+}
 }
