@@ -15,41 +15,6 @@ closeMenuBtn.addEventListener(`click`, () => {
   openMenuBtn.style.display = `block`;
   navbar.style.marginTop = `-100%`;
 });
-// Main section
-// Parallax scroll
-// 1st element--
-const parallax1 = document.querySelectorAll(`.parallax1`);
-
-window.addEventListener(`scroll`, function () {
-  let offset = this.window.pageYOffset;
-  parallax1.forEach((item) => {
-    item.style.backgroundPositionY = offset * -0.01 + `px`;
-  });
-  // console.log(`offset: ` + offset);
-  // console.log(`offset modified: ` + offset * -0.2 + `px`);
-});
-
-//2nd element
-const parallax2 = document.querySelectorAll(`.parallax2`);
-
-window.addEventListener(`scroll`, function () {
-  let offset = this.window.pageYOffset;
-  parallax2.forEach((item) => {
-    item.style.backgroundPositionY = offset * -0.01 + `px`;
-  });
-});
-// console.log(`offset: ` + offset);
-// console.log(`offset modified: ` + offset * -0.2 + `px`);
-
-//3rd element
-const parallax3 = document.querySelectorAll(`.parallax3`);
-
-window.addEventListener(`scroll`, function () {
-  let offset = this.window.pageYOffset;
-  parallax3.forEach((item) => {
-    item.style.backgroundPositionY = offset * -0.01 + `px`;
-  });
-});
 
 // Main text intersection observer
 
