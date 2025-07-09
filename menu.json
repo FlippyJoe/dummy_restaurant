@@ -1,0 +1,212 @@
+[
+  {
+    "category": "Starter",
+    "item_name": "Gazpacho Andaluz",
+    "item_description": "Chilled tomato soup blended with cucumber, bell pepper, garlic, olive oil, and vinegar",
+    "price": 6.5
+  },
+  {
+    "category": "Starter",
+    "item_name": "Croquetas de Jamón",
+    "item_description": "Creamy béchamel croquettes with diced Iberian ham, deep-fried to a golden crisp",
+    "price": 7.0
+  },
+  {
+    "category": "Starter",
+    "item_name": "Pan con Tomate",
+    "item_description": "Rustic bread rubbed with garlic, ripe tomatoes, olive oil, and sea salt",
+    "price": 5.0
+  },
+  {
+    "category": "Starter",
+    "item_name": "Pulpo a la Gallega",
+    "item_description": "Tender octopus slices with olive oil, smoked paprika, and sea salt over potatoes",
+    "price": 9.0
+  },
+  {
+    "category": "Starter",
+    "item_name": "Boquerones en Vinagre",
+    "item_description": "White anchovies marinated in vinegar, olive oil, and garlic, served with parsley",
+    "price": 6.5
+  },
+  {
+    "category": "Main",
+    "item_name": "Paella Valenciana",
+    "item_description": "Saffron rice with rabbit, chicken, green beans, and white beans, cooked in a traditional paellera",
+    "price": 18.0
+  },
+  {
+    "category": "Main",
+    "item_name": "Bacalao a la Vizcaína",
+    "item_description": "Salt cod in a red pepper and onion sauce from the Basque region",
+    "price": 17.0
+  },
+  {
+    "category": "Main",
+    "item_name": "Cochinillo Asado",
+    "item_description": "Roast suckling pig with crispy skin and tender meat, served with rustic potatoes",
+    "price": 22.5
+  },
+  {
+    "category": "Main",
+    "item_name": "Pollo al Ajillo",
+    "item_description": "Chicken sautéed with garlic and white wine, served with roasted vegetables",
+    "price": 15.0
+  },
+  {
+    "category": "Main",
+    "item_name": "Fideuà de Marisco",
+    "item_description": "Short pasta cooked like paella with prawns, mussels, and squid",
+    "price": 17.5
+  },
+  {
+    "category": "Dessert",
+    "item_name": "Churros con Chocolate",
+    "item_description": "Crispy fried dough sticks dusted with sugar, served with thick hot chocolate",
+    "price": 5.5
+  },
+  {
+    "category": "Dessert",
+    "item_name": "Tarta de Santiago",
+    "item_description": "Almond cake from Galicia with powdered sugar and the cross of St. James",
+    "price": 6.0
+  },
+  {
+    "category": "Dessert",
+    "item_name": "Crema Catalana",
+    "item_description": "Catalan-style crème brûlée flavored with cinnamon and citrus",
+    "price": 5.5
+  },
+  {
+    "category": "Dessert",
+    "item_name": "Flan de Huevo",
+    "item_description": "Classic Spanish egg custard with caramel topping",
+    "price": 5.0
+  },
+  {
+    "category": "Dessert",
+    "item_name": "Helado de Turrón",
+    "item_description": "Nougat-flavored ice cream made with almond and honey turrón",
+    "price": 5.5
+  },
+  {
+    "category": "Wine",
+    "item_name": "Albariño Rías Baixas",
+    "item_description": "Crisp, aromatic white wine with floral and stone fruit notes",
+    "price": 6.5
+  },
+  {
+    "category": "Wine",
+    "item_name": "Rioja Crianza",
+    "item_description": "Medium-bodied red wine with oak aging, cherry, and spice aromas",
+    "price": 7.0
+  },
+  {
+    "category": "Wine",
+    "item_name": "Txakoli",
+    "item_description": "Slightly sparkling white wine from the Basque Country with zesty acidity",
+    "price": 6.0
+  },
+  {
+    "category": "Wine",
+    "item_name": "Cava Brut Nature",
+    "item_description": "Traditional Spanish sparkling wine with no added sugar",
+    "price": 6.5
+  },
+  {
+    "category": "Wine",
+    "item_name": "Pedro Ximénez Sherry",
+    "item_description": "Lusciously sweet fortified wine from Andalusia with raisin and toffee notes",
+    "price": 7.5
+  },
+  {
+    "category": "Spirit",
+    "item_name": "Pacharán",
+    "item_description": "Traditional Basque sloe-flavored liqueur served chilled",
+    "price": 5.5
+  },
+  {
+    "category": "Spirit",
+    "item_name": "Licor 43",
+    "item_description": "Sweet Spanish liqueur with vanilla, citrus, and spice",
+    "price": 6.0
+  },
+  {
+    "category": "Spirit",
+    "item_name": "Orujo Blanco",
+    "item_description": "Strong Galician pomace brandy served as a digestif",
+    "price": 6.5
+  },
+  {
+    "category": "Spirit",
+    "item_name": "Vermut Rojo",
+    "item_description": "Red vermouth with herbal bitterness and orange peel, served on ice",
+    "price": 5.0
+  },
+  {
+    "category": "Spirit",
+    "item_name": "Gin Mare & Tonic",
+    "item_description": "Mediterranean gin with basil, thyme, and rosemary, served with tonic",
+    "price": 8.0
+  },
+  {
+    "category": "Soft Drink",
+    "item_name": "Agua con Gas",
+    "item_description": "Sparkling mineral water served chilled",
+    "price": 2.5
+  },
+  {
+    "category": "Soft Drink",
+    "item_name": "Zumo de Naranja Natural",
+    "item_description": "Freshly squeezed orange juice",
+    "price": 3.5
+  },
+  {
+    "category": "Soft Drink",
+    "item_name": "Tinto de Verano",
+    "item_description": "Red wine mixed with lemon soda over ice",
+    "price": 4.0
+  },
+  {
+    "category": "Soft Drink",
+    "item_name": "Granizado de Limón",
+    "item_description": "Icy lemon slush popular in Spanish summers",
+    "price": 3.0
+  },
+  {
+    "category": "Soft Drink",
+    "item_name": "Mosto",
+    "item_description": "Unfermented grape juice often served to kids or as a non-alcoholic wine substitute",
+    "price": 3.0
+  },
+  {
+    "category": "Coffee",
+    "item_name": "Café Solo",
+    "item_description": "Single shot of strong Spanish espresso",
+    "price": 1.8
+  },
+  {
+    "category": "Coffee",
+    "item_name": "Café con Leche",
+    "item_description": "Espresso with equal parts steamed milk, smooth and balanced",
+    "price": 2.2
+  },
+  {
+    "category": "Coffee",
+    "item_name": "Café Cortado",
+    "item_description": "Espresso cut with a splash of warm milk",
+    "price": 2.0
+  },
+  {
+    "category": "Coffee",
+    "item_name": "Carajillo",
+    "item_description": "Espresso spiked with brandy or rum — a Spanish classic",
+    "price": 2.8
+  },
+  {
+    "category": "Coffee",
+    "item_name": "Leche Manchada",
+    "item_description": "Mostly milk with a touch of espresso — the opposite of a cortado",
+    "price": 2.0
+  }
+]
