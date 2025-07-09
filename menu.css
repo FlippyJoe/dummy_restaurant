@@ -20,7 +20,7 @@ img {
 }
 
 .header-address-bar {
-  background-color: rgba(0, 0, 0);
+  background-color: #000000;
   height: 30px;
   display: flex;
   align-items: center;
@@ -35,12 +35,12 @@ img {
 }
 
 .header-address {
-  color: wheat;
+  color: #f5deb3;
   font-size: clamp(0.7rem, 1.4vw, 1.6rem);
 }
 
 .fa-brands {
-  color: wheat;
+  color: #f5deb3;
   z-index: 1000;
 }
 
@@ -64,7 +64,7 @@ img {
 .fa-twitter:hover {
   opacity: 0.8;
   transform: translateY(3px);
-  color: lightcyan;
+  color: #e0ffff;
 }
 
 .menu-btn {
@@ -76,14 +76,14 @@ img {
   transition: 0.75s;
   cursor: pointer;
   font-size: 1.5rem;
-  color: lightblue;
+  color: #add8e6;
 
   z-index: 1000;
 }
 
 .menu-btn:hover {
   transform: rotate(360deg);
-  color: gold;
+  color: #ffd700;
 }
 
 .openMenuBtn {
@@ -118,7 +118,7 @@ nav {
 
   width: 100vw;
 
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 
@@ -129,24 +129,24 @@ nav {
 
 .linksContainer a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   transition: all 0.75s;
 }
 
 .linksContainer a:hover {
-  color: orange;
+  color: #ffa500;
   transform: translateY(10px);
   padding: 2px;
 }
 
 .linksContainer .active-page {
   text-decoration: underline;
-  color: blue;
+  color: #0000ff;
 }
 
 .linksContainer .active-page:hover {
   text-decoration: underline;
-  color: blue;
+  color: #0000ff;
   transform: translateY(0);
 }
 
@@ -245,7 +245,7 @@ h3::after {
   content: "";
   width: 50%;
   height: 1px;
-  background: linear-gradient(45deg, white, blue);
+  background: linear-gradient(45deg, #ffffff, #0000ff);
   bottom: -1px;
   left: 0;
 }
@@ -254,7 +254,7 @@ h2 {
   font-family: tangerine, sans-serif;
   font-size: clamp(2rem, 3.5vw, 2.5rem);
   position: relative;
-  margin-left: 50%;
+  margin-left: 30%;
   transition: 0.8s;
 }
 
@@ -263,7 +263,7 @@ h2::after {
   content: "";
   width: 100%;
   height: 1px;
-  background: linear-gradient(45deg, rgb(245, 222, 119), #1e1e1e);
+  background: linear-gradient(45deg, #f5de77, #1e1e1e);
   bottom: 1px;
   left: 0;
 }
